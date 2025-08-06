@@ -16,11 +16,13 @@ jobs:
         uses: Platane/snk@master
         with:
           github_user_name: VrundKasodariya
+          output_folder: dist
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake.gif
           color_snake: "#8B5CF6"
           color_dots: "#ABD699, #7BC950, #3DBF3A, #2E9A1A, #1D6800"
+
 
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v3
